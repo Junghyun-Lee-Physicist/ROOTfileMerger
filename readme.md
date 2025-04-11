@@ -72,16 +72,16 @@ Only the mode (local or condor) is supplied as a command-line argument; all othe
   ```
 
   2. Generate Job Scripts:
-    - To create a local run script:
-    ```bash
-    python3 jobScriptGenerator.py --mode local
-    ```
-    - To generate a Condor submission file:
-    ```bash
-    python3 jobScriptGenerator.py --mode condor
-    ```
+  - To create a local run script:
+  ```bash
+  python3 jobScriptGenerator.py --mode local
+  ```
+  - To generate a Condor submission file:
+  ```bash
+  python3 jobScriptGenerator.py --mode condor
+  ```
 
-  3. Submit Condor Jobs (if using Condor mode):
+  4. Submit Condor Jobs (if using Condor mode):
   ```bash
   condor_submit condor_job.sub
   ```
@@ -91,5 +91,3 @@ Only the mode (local or condor) is supplied as a command-line argument; all othe
 ## Summary
 
 This repository offers a flexible solution for merging ROOT files and generating submission scripts suitable for both local and HTCondor environments. Modify the hardcoded variables as necessary to tailor the scripts to your particular dataset and workflow.
-
-
