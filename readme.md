@@ -53,15 +53,15 @@ Only the mode (local or condor) is supplied as a command-line argument; all othe
     - Condor Mode:
     Generates a Condor submission file (condor_job.sub) where each job is set up for a subdirectory. This file includes the necessary Condor directives (e.g., Executable, Output, Error, Log) and configures the job's arguments accordingly.
     - Usage Examples:
-    For a local run script:
-    ```bash
-    python3 jobScriptGenerator.py --mode local
-    ```
+      For a local run script:
+      ```bash
+      python3 jobScriptGenerator.py --mode local
+      ```
 
-    For a Condor submission file:
-    ```bash
-    python3 jobScriptGenerator.py --mode condor
-    ```
+      For a Condor submission file:
+      ```bash
+      python3 jobScriptGenerator.py --mode condor
+      ```
 
 ----------
 
