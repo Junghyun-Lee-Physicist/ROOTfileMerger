@@ -66,24 +66,14 @@ Only the mode (local or condor) is supplied as a command-line argument; all othe
 ----------
 
 ## Setup and Execution
-  1. Run the merge script locally (for testing or small datasets):
+  1. Merge Locally:
   ```bash
-  python3 mergeOutput.py --dir /your/ntuple_directory --pat out_*.root --out merged.root
+  ./merge_Locally.sh
   ```
 
-  2. Generate Job Scripts:
-  - To create a local run script:
+  2. Submit Condor Jobs:
   ```bash
-  python3 jobScriptGenerator.py --mode local
-  ```
-  - To generate a Condor submission file:
-  ```bash
-  python3 jobScriptGenerator.py --mode condor
-  ```
-
-  4. Submit Condor Jobs (if using Condor mode):
-  ```bash
-  condor_submit condor_job.sub
+  condor_submit merge_using_condor.sub
   ```
 
 ----------
