@@ -38,7 +38,7 @@ Only the mode (local or condor) is supplied as a command-line argument; all othe
 
 - Key Points
   - Logging:
-  Uses the Python logging module for real-time console output. When invoked with python3 -u, the output is unbuffered.
+  Uses the Python logging module for real-time console output. When invoked with `python3 -u`, the output is unbuffered.
   - Timing:
   The script records the start time before commencing and calculates the elapsed time after the merge process ends. Both the total elapsed time (in seconds) and its equivalent in minutes and seconds are logged.
 
@@ -65,7 +65,7 @@ Only the mode (local or condor) is supplied as a command-line argument; all othe
 
 ----------
 
-## Setup and Execution
+## Execution
   1. Merge Locally:
   ```bash
   ./merge_Locally.sh
